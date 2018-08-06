@@ -1,0 +1,8 @@
+{% import ShamUiDirectives from '../../../src/sham-ui-directives' %}
+
+<main>
+    <pre>
+        Directives for sham-ui-templates
+    </pre>
+    <ShamUiDirectives/>
+</main>
