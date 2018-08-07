@@ -1,0 +1,141 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`disabled false 1`] = `
+Object {
+  "ID": "widget",
+  "constructorOptions": Object {
+    "directives": Object {
+      "disabled": [Function],
+    },
+    "disabled": false,
+  },
+  "html": "<input>",
+  "nodes": Array [
+    Object {
+      "ID": undefined,
+      "constructorOptions": null,
+      "html": null,
+      "nodes": null,
+      "options": null,
+    },
+  ],
+  "options": Object {
+    "actionSequence": Array [
+      "render",
+      "bindEvents",
+    ],
+    "directives": Object {
+      "disabled": [Function],
+    },
+    "disabled": false,
+    "renderAsync": false,
+    "renderDependence": Array [],
+    "types": Array [],
+  },
+}
+`;
+
+exports[`disabled true 1`] = `
+Object {
+  "ID": "widget",
+  "constructorOptions": Object {
+    "directives": Object {
+      "disabled": [Function],
+    },
+    "disabled": true,
+  },
+  "html": "<input disabled=\\"\\">",
+  "nodes": Array [
+    Object {
+      "ID": undefined,
+      "constructorOptions": null,
+      "html": null,
+      "nodes": null,
+      "options": null,
+    },
+  ],
+  "options": Object {
+    "actionSequence": Array [
+      "render",
+      "bindEvents",
+    ],
+    "directives": Object {
+      "disabled": [Function],
+    },
+    "disabled": true,
+    "renderAsync": false,
+    "renderDependence": Array [],
+    "types": Array [],
+  },
+}
+`;
+
+exports[`disabled update 1`] = `
+Object {
+  "ID": "widget",
+  "constructorOptions": Object {
+    "directives": Object {
+      "disabled": [Function],
+    },
+    "disabled": true,
+  },
+  "html": "<input>",
+  "nodes": Array [
+    Object {
+      "ID": undefined,
+      "constructorOptions": null,
+      "html": null,
+      "nodes": null,
+      "options": null,
+    },
+  ],
+  "options": Object {
+    "actionSequence": Array [
+      "render",
+      "bindEvents",
+    ],
+    "directives": Object {
+      "disabled": [Function],
+    },
+    "disabled": false,
+    "renderAsync": false,
+    "renderDependence": Array [],
+    "types": Array [],
+  },
+}
+`;
+
+exports[`disabled update 2`] = `
+Object {
+  "ID": "widget",
+  "constructorOptions": Object {
+    "directives": Object {
+      "disabled": [Function],
+    },
+    "disabled": true,
+  },
+  "html": "<input disabled=\\"\\">",
+  "nodes": Array [
+    Object {
+      "ID": undefined,
+      "constructorOptions": null,
+      "html": null,
+      "nodes": null,
+      "options": null,
+    },
+  ],
+  "options": Object {
+    "actionSequence": Array [
+      "render",
+      "bindEvents",
+    ],
+    "directives": Object {
+      "disabled": [Function],
+    },
+    "disabled": true,
+    "renderAsync": false,
+    "renderDependence": Array [],
+    "types": Array [],
+  },
+}
+`;

@@ -1,8 +1,16 @@
-{% import ShamUiDirectives from '../../../src/sham-ui-directives' %}
-
 <main>
     <pre>
         Directives for sham-ui-templates
     </pre>
-    <ShamUiDirectives/>
+    <p>
+        <input :disabled={{true}} value="disabled"/>
+    </p>
+    <p>
+        <input :disabled={{false}} value="!disabled"/>
+    </p>
+    <p>
+        <button :onclick={{click}}>
+            Click me
+        </button>
+    </p>
 </main>

@@ -6,13 +6,13 @@ const plugins = [
 
 module.exports = {
     entry: {
-        index: './src/sham-ui-directives.js',
+        index: './src/index'
     },
     output: {
         path: __dirname,
         filename: '[name].js',
         publicPath: '/',
-        library: ['sham-ui-directives', 'sham-ui-directives/[name]' ],
+        library: [ 'sham-ui-directives', 'sham-ui-directives/[name]' ],
         libraryTarget: 'umd'
     },
     externals: [

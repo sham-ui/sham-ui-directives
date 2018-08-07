@@ -24,7 +24,8 @@ app.listen( port, function( error ) {
 
         // eslint-disable-next-line no-console
         console.info(
-            'App "Demo for sham-ui-directives" started.\nOpen up http://localhost:%s/ in your browser.',
+            'App "Demo for sham-ui-directives" started.' +
+            '\nOpen up http://localhost:%s/ in your browser.',
             port
         );
     }
