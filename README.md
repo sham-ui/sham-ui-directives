@@ -14,8 +14,13 @@ yarn add sham-ui-directives
 ```
 
 ## Usage
-```html
-{% import sham-ui-directives from 'sham-ui-directives' %}
-...
-    <sham-ui-directives/>
-...
+```js
+import directives from 'sham-ui-directives';
+
+// ...
+
+new App( 'body', 'app', {
+    directives
+} );
+// ...
+```
