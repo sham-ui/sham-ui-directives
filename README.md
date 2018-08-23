@@ -15,7 +15,7 @@ yarn add sham-ui-directives
 
 ## Usage
 ```js
-import directives from 'sham-ui-directives';
+import * as directives from 'sham-ui-directives';
 
 // ...
 

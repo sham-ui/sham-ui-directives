@@ -1,6 +1,6 @@
 import renderer from 'sham-ui-test-helpers';
 import Dummy from './Dummy.sht';
-import disabled from '../../../src/disabled';
+import { disabled } from '../../../src';
 
 it( 'disabled true', () => {
     const meta = renderer( Dummy, {

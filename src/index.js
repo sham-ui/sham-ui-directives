@@ -1,7 +1,2 @@
-import disabled from './disabled';
-import events from './event-listener';
-
-export default {
-    disabled,
-    ...events
-};
+export { default as disabled } from './disabled';
+export * from './event-listener';

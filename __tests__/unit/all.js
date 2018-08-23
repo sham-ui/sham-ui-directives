@@ -1,15 +1,13 @@
 import renderer from 'sham-ui-test-helpers';
-import Dummy from './Dummy.sht';
-import { onclick } from '../../../src/index';
+import Dummy from './events/Dummy.sht';
+import * as directives from '../../src/index';
 
 it( 'click', () => {
     expect.assertions( 2 );
 
     const click = jest.fn();
     const meta = renderer( Dummy, {
-        directives: {
-            onclick
-        },
+        directives,
         click
     } );
     expect( meta.toJSON() ).toMatchSnapshot();

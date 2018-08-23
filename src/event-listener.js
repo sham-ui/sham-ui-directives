@@ -1,4 +1,4 @@
-class EventListener {
+export class EventListener {
     constructor( type ) {
         this.type = type;
         this.handler = null;
@@ -22,40 +22,39 @@ class EventListener {
     }
 }
 
-export default {
-    onclick: class extends EventListener {
-        constructor() {
-            super( 'click' );
-        }
-    },
-    onsubmit: class extends EventListener {
-        constructor() {
-            super( 'submit' );
-        }
-    },
-    onload: class extends EventListener {
-        constructor() {
-            super( 'load' );
-        }
-    },
-    onresize: class extends EventListener {
-        constructor() {
-            super( 'resize' );
-        }
-    },
-    onscroll: class extends EventListener {
-        constructor() {
-            super( 'scroll' );
-        }
-    },
-    oninput: class extends EventListener {
-        constructor() {
-            super( 'input' );
-        }
-    },
-    onselect: class extends EventListener {
-        constructor() {
-            super( 'select' );
-        }
+export class onclick extends EventListener {
+    constructor() {
+        super( 'click' );
     }
-};
+}
+export class onsubmit extends EventListener {
+    constructor() {
+        super( 'submit' );
+    }
+}
+export class onload extends EventListener {
+    constructor() {
+        super( 'load' );
+    }
+}
+export class onresize extends EventListener {
+    constructor() {
+        super( 'resize' );
+    }
+}
+export class onscroll extends EventListener {
+    constructor() {
+        super( 'scroll' );
+    }
+}
+export class oninput extends EventListener {
+    constructor() {
+        super( 'input' );
+    }
+}
+export class onselect extends EventListener {
+    constructor() {
+        super( 'select' );
+    }
+}
+
