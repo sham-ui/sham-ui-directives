@@ -1,15 +1,19 @@
 import { DI } from 'sham-ui';
-import directives from '../../../src/index';
+import { onclick, disabled } from '../../../src/index';
 import App from '../widgets/App.sht';
 
 export default function() {
     const app = new App( 'body', 'app', {
-        directives,
-        click( e ) {
-
-            // eslint-disable-next-line no-console
-            console.log( 'Click', e );
-        }
+        directives: {
+            onclick,
+            disabled
+        },
+        click() {
+            this.update( {
+                disabled: !this.options.disabled
+            } );
+        },
+        disabled: true
     } );
 
     DI.bind( 'widgets:app', app );
