@@ -19,7 +19,7 @@ import * as directives from 'sham-ui-directives';
 
 // ...
 
-new App( 'body', 'app', {
+new App( {
     directives
 } );
 // ...

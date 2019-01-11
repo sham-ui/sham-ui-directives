@@ -2,140 +2,64 @@
 
 exports[`disabled false 1`] = `
 Object {
-  "ID": "widget",
-  "constructorOptions": Object {
+  "Constructor": "Dummy",
+  "Options": Object {
+    "ID": "widget",
+    "containerSelector": "body",
     "directives": Object {
       "disabled": [Function],
     },
     "disabled": false,
-  },
-  "html": "<input>",
-  "nodes": Array [
-    Object {
-      "ID": undefined,
-      "constructorOptions": null,
-      "html": null,
-      "nodes": null,
-      "options": null,
-    },
-  ],
-  "options": Object {
-    "actionSequence": Array [
-      "render",
-      "bindEvents",
-    ],
-    "directives": Object {
-      "disabled": [Function],
-    },
-    "disabled": false,
-    "renderAsync": false,
-    "renderDependence": Array [],
     "types": Array [],
   },
+  "html": "<input>",
 }
 `;
 
 exports[`disabled true 1`] = `
 Object {
-  "ID": "widget",
-  "constructorOptions": Object {
+  "Constructor": "Dummy",
+  "Options": Object {
+    "ID": "widget",
+    "containerSelector": "body",
     "directives": Object {
       "disabled": [Function],
     },
     "disabled": true,
-  },
-  "html": "<input disabled=\\"\\">",
-  "nodes": Array [
-    Object {
-      "ID": undefined,
-      "constructorOptions": null,
-      "html": null,
-      "nodes": null,
-      "options": null,
-    },
-  ],
-  "options": Object {
-    "actionSequence": Array [
-      "render",
-      "bindEvents",
-    ],
-    "directives": Object {
-      "disabled": [Function],
-    },
-    "disabled": true,
-    "renderAsync": false,
-    "renderDependence": Array [],
     "types": Array [],
   },
+  "html": "<input disabled=\\"\\">",
 }
 `;
 
 exports[`disabled update 1`] = `
 Object {
-  "ID": "widget",
-  "constructorOptions": Object {
-    "directives": Object {
-      "disabled": [Function],
-    },
-    "disabled": true,
-  },
-  "html": "<input>",
-  "nodes": Array [
-    Object {
-      "ID": undefined,
-      "constructorOptions": null,
-      "html": null,
-      "nodes": null,
-      "options": null,
-    },
-  ],
-  "options": Object {
-    "actionSequence": Array [
-      "render",
-      "bindEvents",
-    ],
+  "Constructor": "Dummy",
+  "Options": Object {
+    "ID": "widget",
+    "containerSelector": "body",
     "directives": Object {
       "disabled": [Function],
     },
     "disabled": false,
-    "renderAsync": false,
-    "renderDependence": Array [],
     "types": Array [],
   },
+  "html": "<input>",
 }
 `;
 
 exports[`disabled update 2`] = `
 Object {
-  "ID": "widget",
-  "constructorOptions": Object {
+  "Constructor": "Dummy",
+  "Options": Object {
+    "ID": "widget",
+    "containerSelector": "body",
     "directives": Object {
       "disabled": [Function],
     },
     "disabled": true,
-  },
-  "html": "<input disabled=\\"\\">",
-  "nodes": Array [
-    Object {
-      "ID": undefined,
-      "constructorOptions": null,
-      "html": null,
-      "nodes": null,
-      "options": null,
-    },
-  ],
-  "options": Object {
-    "actionSequence": Array [
-      "render",
-      "bindEvents",
-    ],
-    "directives": Object {
-      "disabled": [Function],
-    },
-    "disabled": true,
-    "renderAsync": false,
-    "renderDependence": Array [],
     "types": Array [],
   },
+  "html": "<input disabled=\\"\\">",
 }
 `;

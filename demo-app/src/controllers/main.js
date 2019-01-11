@@ -1,9 +1,10 @@
-import { DI } from 'sham-ui';
 import { onclick, disabled } from '../../../src/index';
 import App from '../widgets/App.sht';
 
 export default function() {
-    const app = new App( 'body', 'app', {
+    new App( {
+        ID: 'app',
+        containerSelector: 'body',
         directives: {
             onclick,
             disabled
@@ -15,6 +16,4 @@ export default function() {
         },
         disabled: true
     } );
-
-    DI.bind( 'widgets:app', app );
 }

@@ -2,35 +2,16 @@
 
 exports[`click 1`] = `
 Object {
-  "ID": "widget",
-  "constructorOptions": Object {
+  "Constructor": "Dummy",
+  "Options": Object {
+    "ID": "widget",
     "click": [MockFunction],
+    "containerSelector": "body",
     "directives": Object {
       "onclick": [Function],
     },
-  },
-  "html": "<button>click me</button>",
-  "nodes": Array [
-    Object {
-      "ID": undefined,
-      "constructorOptions": null,
-      "html": null,
-      "nodes": null,
-      "options": null,
-    },
-  ],
-  "options": Object {
-    "actionSequence": Array [
-      "render",
-      "bindEvents",
-    ],
-    "click": [MockFunction],
-    "directives": Object {
-      "onclick": [Function],
-    },
-    "renderAsync": false,
-    "renderDependence": Array [],
     "types": Array [],
   },
+  "html": "<button>click me</button>",
 }
 `;
