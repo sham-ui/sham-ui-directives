@@ -17,6 +17,7 @@ Object {
       "onscroll": [Function],
       "onselect": [Function],
       "onsubmit": [Function],
+      "ref": [Function],
     },
     "types": Array [],
   },

@@ -1,0 +1,6 @@
+<div>
+    <form :ref="form">
+        <input name="first_name" value="First name" :ref="firstName">
+        <input name="last_name" value="Last name" :ref="lastName">
+    </form>
+</div>

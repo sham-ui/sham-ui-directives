@@ -1,0 +1,23 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ref 1`] = `
+Object {
+  "Constructor": "Dummy",
+  "Options": Object {
+    "ID": "widget",
+    "containerSelector": "body",
+    "directives": Object {
+      "ref": [Function],
+    },
+    "types": Array [],
+  },
+  "html": "
+<div>
+  <form>
+    <input name=\\"first_name\\">
+    <input name=\\"last_name\\">
+  </form>
+</div>
+",
+}
+`;
