@@ -3,7 +3,7 @@
   "description": "Directives for sham-ui-templates",
   "author": "Eugeny Burnashov <shamcode@gmail.com>",
   "main": "index.js",
-  "version": "2.0.0",
+  "version": "2.0.1",
   "scripts": {
     "start": "node demo-app/server.js",
     "test:coverage": "jest --coverage",

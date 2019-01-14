@@ -1,3 +1,6 @@
+## 2.0.1
+* Add `ref` directive
+
 ## 2.0.0
 * Update dependencies
 
