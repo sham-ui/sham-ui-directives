@@ -4,7 +4,7 @@ exports[`disabled false 1`] = `
 Object {
   "Constructor": "Dummy",
   "Options": Object {
-    "ID": "widget",
+    "ID": "component",
     "containerSelector": "body",
     "directives": Object {
       "disabled": [Function],
@@ -20,7 +20,7 @@ exports[`disabled true 1`] = `
 Object {
   "Constructor": "Dummy",
   "Options": Object {
-    "ID": "widget",
+    "ID": "component",
     "containerSelector": "body",
     "directives": Object {
       "disabled": [Function],
@@ -36,7 +36,7 @@ exports[`disabled update 1`] = `
 Object {
   "Constructor": "Dummy",
   "Options": Object {
-    "ID": "widget",
+    "ID": "component",
     "containerSelector": "body",
     "directives": Object {
       "disabled": [Function],
@@ -52,7 +52,7 @@ exports[`disabled update 2`] = `
 Object {
   "Constructor": "Dummy",
   "Options": Object {
-    "ID": "widget",
+    "ID": "component",
     "containerSelector": "body",
     "directives": Object {
       "disabled": [Function],

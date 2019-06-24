@@ -4,7 +4,7 @@ exports[`click 1`] = `
 Object {
   "Constructor": "Dummy",
   "Options": Object {
-    "ID": "widget",
+    "ID": "component",
     "click": [MockFunction],
     "containerSelector": "body",
     "directives": Object {

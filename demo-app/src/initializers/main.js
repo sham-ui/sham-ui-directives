@@ -1,5 +1,5 @@
 import { onclick, disabled } from '../../../src/index';
-import App from '../widgets/App.sht';
+import App from '../components/App.sht';
 
 export default function() {
     new App( {

@@ -29,11 +29,11 @@ it( 'disabled update', () => {
         },
         disabled: true
     } );
-    meta.widget.update( {
+    meta.component.update( {
         disabled: false
     } );
     expect( meta.toJSON() ).toMatchSnapshot();
-    meta.widget.update( {
+    meta.component.update( {
         disabled: true
     } );
     expect( meta.toJSON() ).toMatchSnapshot();

@@ -9,7 +9,7 @@ it( 'ref', () => {
         }
     } );
     expect( meta.toJSON() ).toMatchSnapshot();
-    expect( meta.widget.form.tagName ).toBe( 'FORM' );
-    expect( meta.widget.firstName.value ).toBe( 'First name' );
-    expect( meta.widget.lastName.value ).toBe( 'Last name' );
+    expect( meta.component.form.tagName ).toBe( 'FORM' );
+    expect( meta.component.firstName.value ).toBe( 'First name' );
+    expect( meta.component.lastName.value ).toBe( 'Last name' );
 } );
