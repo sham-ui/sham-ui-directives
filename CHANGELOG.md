@@ -1,3 +1,7 @@
+## master
+* Update dependencies
+* Add `size-limit`
+
 ## 3.0.1
 * Update dependencies
 

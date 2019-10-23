@@ -6,7 +6,6 @@ Object {
   "Options": Object {
     "ID": "component",
     "click": [MockFunction],
-    "containerSelector": "body",
     "directives": Object {
       "EventListener": [Function],
       "disabled": [Function],
@@ -19,7 +18,6 @@ Object {
       "onsubmit": [Function],
       "ref": [Function],
     },
-    "types": Array [],
   },
   "html": "<button>click me</button>",
 }

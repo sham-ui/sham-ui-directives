@@ -5,11 +5,9 @@ Object {
   "Constructor": "Dummy",
   "Options": Object {
     "ID": "component",
-    "containerSelector": "body",
     "directives": Object {
       "ref": [Function],
     },
-    "types": Array [],
   },
   "html": "
 <div>

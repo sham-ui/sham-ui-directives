@@ -5,12 +5,10 @@ Object {
   "Constructor": "Dummy",
   "Options": Object {
     "ID": "component",
-    "containerSelector": "body",
     "directives": Object {
       "disabled": [Function],
     },
     "disabled": false,
-    "types": Array [],
   },
   "html": "<input>",
 }
@@ -21,12 +19,10 @@ Object {
   "Constructor": "Dummy",
   "Options": Object {
     "ID": "component",
-    "containerSelector": "body",
     "directives": Object {
       "disabled": [Function],
     },
     "disabled": true,
-    "types": Array [],
   },
   "html": "<input disabled=\\"\\">",
 }
@@ -37,12 +33,10 @@ Object {
   "Constructor": "Dummy",
   "Options": Object {
     "ID": "component",
-    "containerSelector": "body",
     "directives": Object {
       "disabled": [Function],
     },
     "disabled": false,
-    "types": Array [],
   },
   "html": "<input>",
 }
@@ -53,12 +47,10 @@ Object {
   "Constructor": "Dummy",
   "Options": Object {
     "ID": "component",
-    "containerSelector": "body",
     "directives": Object {
       "disabled": [Function],
     },
     "disabled": true,
-    "types": Array [],
   },
   "html": "<input disabled=\\"\\">",
 }

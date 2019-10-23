@@ -1,6 +1,6 @@
 export default class {
-    constructor( widget ) {
-        this.widget = widget;
+    constructor( component ) {
+        this.component = component;
         this.node = null;
         this.name = null;
     }
@@ -12,13 +12,13 @@ export default class {
     unbind() {
         this.node = null;
         if ( this.name ) {
-            delete this.widget[ this.name ];
+            delete this.component[ this.name ];
         }
         this.name = null;
     }
 
     update( name ) {
         this.name = name;
-        this.widget[ name ] = this.node;
+        this.component[ name ] = this.node;
     }
 }

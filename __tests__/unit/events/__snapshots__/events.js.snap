@@ -6,11 +6,9 @@ Object {
   "Options": Object {
     "ID": "component",
     "click": [MockFunction],
-    "containerSelector": "body",
     "directives": Object {
       "onclick": [Function],
     },
-    "types": Array [],
   },
   "html": "<button>click me</button>",
 }
