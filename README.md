@@ -26,6 +26,9 @@ yarn add sham-ui-directives
 
 -   [disabled](#disabled)
     -   [Examples](#examples)
+-   [ref](#ref)
+    -   [Parameters](#parameters)
+    -   [Examples](#examples-1)
 
 #### disabled
 
@@ -50,6 +53,41 @@ Directive for "disabled" attribute
                 ...( this.directives || {} ),
                 disabled
             };
+        }
+    }
+
+    export default Input;
+</script>
+```
+
+#### ref
+
+Directive for reference to Node
+
+##### Parameters
+
+-   `component`  
+
+##### Examples
+
+```javascript
+<template>
+  <input :ref="inputField" value="default value"/>
+</template>
+<script>
+    import { ref } from 'sham-ui-directives';
+
+    class Input extends Template {
+        constructor() {
+            super( ...arguments );
+            this.directives = {
+                ...( this.directives || {} ),
+                ref
+            };
+        }
+
+        didMount() {
+            alert( this.inputField.value );
         }
     }
 
