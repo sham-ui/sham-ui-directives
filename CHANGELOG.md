@@ -1,6 +1,8 @@
 ## master
 * Update dependencies
 * Add `size-limit`
+* Add `travis`
+* Add documentation
 
 ## 3.0.1
 * Update dependencies

@@ -26,9 +26,20 @@ yarn add sham-ui-directives
 
 -   [disabled](#disabled)
     -   [Examples](#examples)
--   [ref](#ref)
+-   [EventListener](#eventlistener)
     -   [Parameters](#parameters)
     -   [Examples](#examples-1)
+-   [onclick](#onclick)
+    -   [Examples](#examples-2)
+-   [onsubmit](#onsubmit)
+-   [onload](#onload)
+-   [onresize](#onresize)
+-   [onscroll](#onscroll)
+-   [oninput](#oninput)
+-   [onselect](#onselect)
+-   [ref](#ref)
+    -   [Parameters](#parameters-1)
+    -   [Examples](#examples-3)
 
 #### disabled
 
@@ -59,6 +70,96 @@ Directive for "disabled" attribute
     export default Input;
 </script>
 ```
+
+#### EventListener
+
+Base directive class for event listener
+
+##### Parameters
+
+-   `type`  
+
+##### Examples
+
+```javascript
+import { EventListener } from 'sham-ui-directives';
+
+// directive for 'click' event listener
+class onclick extends EventListener {
+    constructor() {
+        super( 'click' );
+    }
+}
+```
+
+#### onclick
+
+**Extends EventListener**
+
+Directive for 'click' listener
+
+##### Examples
+
+```javascript
+<template>
+  <button :onclick={{::this.handler}}>Click me!</button>
+</template>
+<script>
+    import { onclick } from 'sham-ui-directives';
+
+    class Input extends Template {
+        constructor() {
+            super( ...arguments );
+            this.directives = {
+                ...( this.directives || {} ),
+                onclick
+            };
+        }
+
+        handler() {
+            alert( 'Clicked' );
+        }
+    }
+
+    export default Input;
+</script>
+```
+
+#### onsubmit
+
+**Extends EventListener**
+
+Directive for 'submit' listener
+
+#### onload
+
+**Extends EventListener**
+
+Directive for 'load' listener
+
+#### onresize
+
+**Extends EventListener**
+
+Directive for 'resize' listener
+
+#### onscroll
+
+**Extends EventListener**
+
+Directive for 'scroll' listener
+
+#### oninput
+
+**Extends EventListener**
+
+Directive for 'input' listener
+
+#### onselect
+
+**Extends EventListener**
+
+Directive for 'select' listener
 
 #### ref
 
