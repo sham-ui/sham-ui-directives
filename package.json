@@ -39,7 +39,7 @@
     "documentation": "^12.1.2",
     "jest": "^23.6.0",
     "jest-runner-eslint": "^0.7.4",
-    "jest-runner-stylelint": "^1.0.0",
+    "jest-runner-stylelint": "^2.2.3",
     "node-sass": "^4.12.0",
     "sass-loader": "~7.1.0",
     "sham-ui": "^4.0.0",
