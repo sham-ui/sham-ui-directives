@@ -1,3 +1,8 @@
+# 4.1.2
+* Update dependencies
+* Update docs
+* Update nodejs version for travis 
+
 ## 4.1.1
 * Update dependencies
 

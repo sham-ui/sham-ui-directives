@@ -46,10 +46,7 @@ export class EventListener {
  *     class Input extends Template {
  *         constructor() {
  *             super( ...arguments );
- *             this.directives = {
- *                 ...( this.directives || {} ),
- *                 onclick
- *             };
+ *             this.directives.onclick = onclick;
  *         }
  *
  *         handler() {

@@ -60,10 +60,7 @@ Directive for "disabled" attribute
 
         constructor() {
             super( ...arguments );
-            this.directives = {
-                ...( this.directives || {} ),
-                disabled
-            };
+            this.directives.disabled = disabled;
         }
     }
 
@@ -110,10 +107,7 @@ Directive for 'click' listener
     class Input extends Template {
         constructor() {
             super( ...arguments );
-            this.directives = {
-                ...( this.directives || {} ),
-                onclick
-            };
+            this.directives.onclick = onclick;
         }
 
         handler() {
@@ -181,10 +175,7 @@ Directive for reference to Node
     class Input extends Template {
         constructor() {
             super( ...arguments );
-            this.directives = {
-                ...( this.directives || {} ),
-                ref
-            };
+            this.directives.ref = ref;
         }
 
         didMount() {

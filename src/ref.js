@@ -10,10 +10,7 @@
  *     class Input extends Template {
  *         constructor() {
  *             super( ...arguments );
- *             this.directives = {
- *                 ...( this.directives || {} ),
- *                 ref
- *             };
+ *             this.directives.ref = ref;
  *         }
  *
  *         didMount() {

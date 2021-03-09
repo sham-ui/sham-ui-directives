@@ -13,10 +13,7 @@
  *
  *         constructor() {
  *             super( ...arguments );
- *             this.directives = {
- *                 ...( this.directives || {} ),
- *                 disabled
- *             };
+ *             this.directives.disabled = disabled;
  *         }
  *     }
  *
