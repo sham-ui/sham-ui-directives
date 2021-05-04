@@ -2,7 +2,6 @@
 
 exports[`ref 1`] = `
 Object {
-  "Constructor": "Dummy",
   "Options": Object {
     "ID": "component",
     "directives": Object {

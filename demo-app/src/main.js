@@ -7,7 +7,7 @@ if ( module.hot ) {
         const app = store.byId.get( 'app' );
         if ( undefined !== app ) {
             app.remove();
-            store.byId.values().forEach( component => {
+            Array.from( store.byId.values() ).forEach( component => {
                 try {
                     component.remove();
                 } catch ( e ) {

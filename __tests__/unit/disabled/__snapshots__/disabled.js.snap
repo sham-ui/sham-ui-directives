@@ -2,7 +2,6 @@
 
 exports[`disabled false 1`] = `
 Object {
-  "Constructor": "Dummy",
   "Options": Object {
     "ID": "component",
     "directives": Object {
@@ -16,7 +15,6 @@ Object {
 
 exports[`disabled true 1`] = `
 Object {
-  "Constructor": "Dummy",
   "Options": Object {
     "ID": "component",
     "directives": Object {
@@ -30,7 +28,6 @@ Object {
 
 exports[`disabled update 1`] = `
 Object {
-  "Constructor": "Dummy",
   "Options": Object {
     "ID": "component",
     "directives": Object {
@@ -44,7 +41,6 @@ Object {
 
 exports[`disabled update 2`] = `
 Object {
-  "Constructor": "Dummy",
   "Options": Object {
     "ID": "component",
     "directives": Object {

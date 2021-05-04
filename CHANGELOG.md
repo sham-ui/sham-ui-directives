@@ -1,3 +1,7 @@
+# 5.0.0-alpha.1
+* Update dependencies
+* Fix HMR in demo-app
+
 # 5.0.0-alpha.0
 * Update dependencies
 
