@@ -1,3 +1,7 @@
+# 5.0.0-alpha.11
+* Update dependencies
+* Add `UpdateOnEvent`
+
 # 5.0.0-alpha.10
 * Update dependencies
 
