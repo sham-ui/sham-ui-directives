@@ -50,7 +50,7 @@ export class UpdateOnEvent {
 /**
  * Update on 'change' event
  */
-export  class onChangeUpdate extends UpdateOnEvent {
+export class onChangeUpdate extends UpdateOnEvent {
     constructor( component ) {
         super( component, 'change' );
     }
@@ -59,7 +59,7 @@ export  class onChangeUpdate extends UpdateOnEvent {
 /**
  * Update on 'input' event
  */
-export  class onInputUpdate extends UpdateOnEvent {
+export class onInputUpdate extends UpdateOnEvent {
     constructor( component ) {
         super( component, 'input' );
     }
