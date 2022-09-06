@@ -40,6 +40,13 @@ yarn add sham-ui-directives
 -   [ref](#ref)
     -   [Parameters](#parameters-1)
     -   [Examples](#examples-3)
+-   [UpdateOnEvent](#updateonevent)
+    -   [Parameters](#parameters-2)
+    -   [Examples](#examples-4)
+-   [onChangeUpdate](#onchangeupdate)
+    -   [Parameters](#parameters-3)
+-   [onInputUpdate](#oninputupdate)
+    -   [Parameters](#parameters-4)
 
 #### disabled
 
@@ -186,3 +193,45 @@ Directive for reference to Node
     export default Input;
 </script>
 ```
+
+#### UpdateOnEvent
+
+Base directive class for event listener
+
+##### Parameters
+
+-   `component`  
+-   `type`  
+
+##### Examples
+
+```javascript
+import { UpdateOnEvent } from 'sham-ui-directives';
+
+// directive for update on 'input' event listener
+class updateOnEvent extends UpdateOnEvent {
+    constructor() {
+        super( 'input' );
+    }
+}
+```
+
+#### onChangeUpdate
+
+**Extends UpdateOnEvent**
+
+Update on 'change' event
+
+##### Parameters
+
+-   `component`  
+
+#### onInputUpdate
+
+**Extends UpdateOnEvent**
+
+Update on 'input' event
+
+##### Parameters
+
+-   `component`  

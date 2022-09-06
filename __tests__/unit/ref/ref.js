@@ -3,7 +3,7 @@ import Dummy from './Dummy.sht';
 import { ref } from '../../../src';
 
 it( 'ref', () => {
-    const meta = renderer( Dummy, {
+    const meta = renderer( Dummy, {}, {
         directives: {
             ref
         }

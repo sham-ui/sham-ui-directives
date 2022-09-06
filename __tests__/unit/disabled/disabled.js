@@ -4,30 +4,33 @@ import { disabled } from '../../../src';
 
 it( 'disabled true', () => {
     const meta = renderer( Dummy, {
+        disabled: true
+    }, {
         directives: {
             disabled
-        },
-        disabled: true
+        }
     } );
     expect( meta.toJSON() ).toMatchSnapshot();
 } );
 
 it( 'disabled false', () => {
     const meta = renderer( Dummy, {
+        disabled: false
+    }, {
         directives: {
             disabled
-        },
-        disabled: false
+        }
     } );
     expect( meta.toJSON() ).toMatchSnapshot();
 } );
 
 it( 'disabled update', () => {
     const meta = renderer( Dummy, {
+        disabled: true
+    }, {
         directives: {
             disabled
-        },
-        disabled: true
+        }
     } );
     meta.component.update( {
         disabled: false

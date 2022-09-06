@@ -3,10 +3,6 @@
 exports[`disabled false 1`] = `
 Object {
   "Options": Object {
-    "ID": "component",
-    "directives": Object {
-      "disabled": [Function],
-    },
     "disabled": false,
   },
   "html": "<input>",
@@ -16,10 +12,6 @@ Object {
 exports[`disabled true 1`] = `
 Object {
   "Options": Object {
-    "ID": "component",
-    "directives": Object {
-      "disabled": [Function],
-    },
     "disabled": true,
   },
   "html": "<input disabled=\\"\\">",
@@ -29,10 +21,6 @@ Object {
 exports[`disabled update 1`] = `
 Object {
   "Options": Object {
-    "ID": "component",
-    "directives": Object {
-      "disabled": [Function],
-    },
     "disabled": false,
   },
   "html": "<input>",
@@ -42,10 +30,6 @@ Object {
 exports[`disabled update 2`] = `
 Object {
   "Options": Object {
-    "ID": "component",
-    "directives": Object {
-      "disabled": [Function],
-    },
     "disabled": true,
   },
   "html": "<input disabled=\\"\\">",

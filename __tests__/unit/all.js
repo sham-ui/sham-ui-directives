@@ -7,8 +7,9 @@ it( 'click', () => {
 
     const click = jest.fn();
     const meta = renderer( Dummy, {
-        directives,
         click
+    }, {
+        directives
     } );
     expect( meta.toJSON() ).toMatchSnapshot();
     document.querySelector( 'button' ).click();
