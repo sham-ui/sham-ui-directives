@@ -1,3 +1,6 @@
+# 6.0.0-alpha.2
+* Update dependencies
+
 # 6.0.0-alpha.1
 * Update dependencies
 

@@ -10593,10 +10593,10 @@ sham-ui-templates-jest-preprocessor@^1.2.12:
     sham-ui-macro "^3.6.0"
     source-map "^0.5.7"
 
-sham-ui-test-helpers@^6.0.0-alpha.1:
-  version "6.0.0-alpha.1"
-  resolved "https://registry.yarnpkg.com/sham-ui-test-helpers/-/sham-ui-test-helpers-6.0.0-alpha.1.tgz#c3ad6e9a3ad49d87b2ee359db8d3273d597ac94b"
-  integrity sha512-3tf/wDC/mn7F0jZJdDRAtID4JrWrANzpG2gi7fU+G9HtENqIXJ/M4IlhbQ3oE8Ki9cD18l4qEBw2RbIrRHnqIw==
+sham-ui-test-helpers@^6.0.0-alpha.2:
+  version "6.0.0-alpha.2"
+  resolved "https://registry.yarnpkg.com/sham-ui-test-helpers/-/sham-ui-test-helpers-6.0.0-alpha.2.tgz#adcd671e5b2668d47bc88ec5ae246c4d4e7dcd94"
+  integrity sha512-3v4fIPMOpnKMkFXBoMqaPT/5d06hqiLJBrMJy0NeiXjAuNuZ+dKs2ce+gHxzuDD0e9pd1Npy610NCxwaRtARMg==
   dependencies:
     "@babel/runtime" "^7.14.0"
     babel-core "^7.0.0-bridge.0"
