@@ -1,6 +1,6 @@
 import { createRootContext } from 'sham-ui';
 import { onclick, disabled } from '../../../src/index';
-import App from '../components/App.sht';
+import App from '../components/App.sfc';
 
 export default function( DI ) {
     const ctx = createRootContext( {
@@ -13,12 +13,5 @@ export default function( DI ) {
         }
     } );
 
-    new App( ctx, {
-        click() {
-            this.update( {
-                disabled: !this.options.disabled
-            } );
-        },
-        disabled: true
-    } );
+    new App( ctx );
 }

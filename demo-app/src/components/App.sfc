@@ -1,0 +1,29 @@
+<template>
+    <main>
+        <pre>
+            Directives for sham-ui-templates
+        </pre>
+        <p>disabled = {{disabled}}</p>
+        <p>
+            <input :disabled={{disabled}} value="disabled"/>
+        </p>
+        <p>
+            <input :disabled={{!disabled}} value="!disabled"/>
+        </p>
+        <p>
+            <button :onclick={{ () => state$.disabled = !disabled }}>
+                Click me
+            </button>
+        </p>
+    </main>
+</template>
+
+<script>
+    function App( options ) {
+        options( {
+            [ $.disabled ]: true
+        } );
+    }
+
+    export default Component( Template, App );
+</script>

@@ -1,3 +1,7 @@
+# 6.0.0-alpha.7
+* Update dependencies
+* Fix documentation
+
 # 6.0.0-alpha.6
 * Update dependencies
 

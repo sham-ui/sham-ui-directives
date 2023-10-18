@@ -38,23 +38,16 @@ export class EventListener {
  * Directive for 'click' listener
  * @example
  * <template>
- *   <button :onclick={{::this.handler}}>Click me!</button>
+ *   <button :onclick={{() => window.alert( 'Clicked' )}}>Click me!</button>
  * </template>
  * <script>
  *     import { onclick } from 'sham-ui-directives';
  *
- *     class Input extends Template {
- *         constructor() {
- *             super( ...arguments );
- *             this.directives.onclick = onclick;
- *         }
- *
- *         handler() {
- *             alert( 'Clicked' );
- *         }
+ *     function extendContext() {
+ *         this.ctx.appendDirectives( { onclick } );
  *     }
  *
- *     export default Input;
+ *     export default Component( extendContext, Template );
  * </script>
  */
 export class onclick extends EventListener {

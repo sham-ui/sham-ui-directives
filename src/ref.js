@@ -2,23 +2,22 @@
  * Directive for reference to Node
  * @example
  * <template>
- *   <input :ref="inputField" value="default value"/>
+ *   <input :ref={{$.inputField}} value="default value"/>
  * </template>
  * <script>
  *     import { ref } from 'sham-ui-directives';
  *
- *     class Input extends Template {
- *         constructor() {
- *             super( ...arguments );
- *             this.directives.ref = ref;
- *         }
- *
- *         didMount() {
- *             alert( this.inputField.value );
- *         }
+ *     function extendContext() {
+ *         this.ctx.appendDirectives( { ref } );
  *     }
  *
- *     export default Input;
+ *     function Input( options, didMount ) {
+ *         didMount( () => {
+ *             alert( this.inputField.value );
+ *         } )
+ *     }
+ *
+ *     export default Component( extendContext, Template, Input );
  * </script>
  */
 export default class ref {

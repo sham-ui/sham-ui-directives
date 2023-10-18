@@ -58,20 +58,21 @@ Directive for "disabled" attribute
 <template>
   <input :disabled={{inputDisabled}}/>
 </template>
+
 <script>
     import { disabled } from 'sham-ui-directives';
-    import { options } from 'sham-ui-macro/babel.macro';
 
-    class Input extends Template {
-        @options inputDisabled = true;
-
-        constructor() {
-            super( ...arguments );
-            this.directives.disabled = disabled;
-        }
+    function extendContext() {
+        this.ctx.appendDirectives( { disabled } );
     }
 
-    export default Input;
+    function Input( options ) {
+        options( {
+            [ $.inputDisabled ]: true
+        } );
+    }
+
+    export default Component( extendContext, Template, Input );
 </script>
 ```
 
@@ -106,23 +107,16 @@ Directive for 'click' listener
 
 ```javascript
 <template>
-  <button :onclick={{::this.handler}}>Click me!</button>
+  <button :onclick={{() => window.alert( 'Clicked' )}}>Click me!</button>
 </template>
 <script>
     import { onclick } from 'sham-ui-directives';
 
-    class Input extends Template {
-        constructor() {
-            super( ...arguments );
-            this.directives.onclick = onclick;
-        }
-
-        handler() {
-            alert( 'Clicked' );
-        }
+    function extendContext() {
+        this.ctx.appendDirectives( { onclick } );
     }
 
-    export default Input;
+    export default Component( extendContext, Template );
 </script>
 ```
 
@@ -174,23 +168,22 @@ Directive for reference to Node
 
 ```javascript
 <template>
-  <input :ref="inputField" value="default value"/>
+  <input :ref={{$.inputField}} value="default value"/>
 </template>
 <script>
     import { ref } from 'sham-ui-directives';
 
-    class Input extends Template {
-        constructor() {
-            super( ...arguments );
-            this.directives.ref = ref;
-        }
-
-        didMount() {
-            alert( this.inputField.value );
-        }
+    function extendContext() {
+        this.ctx.appendDirectives( { ref } );
     }
 
-    export default Input;
+    function Input( options, didMount ) {
+        didMount( () => {
+            alert( this.inputField.value );
+        } )
+    }
+
+    export default Component( extendContext, Template, Input );
 </script>
 ```
 

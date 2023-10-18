@@ -4,20 +4,21 @@
  * <template>
  *   <input :disabled={{inputDisabled}}/>
  * </template>
+ *
  * <script>
  *     import { disabled } from 'sham-ui-directives';
- *     import { options } from 'sham-ui-macro/babel.macro';
  *
- *     class Input extends Template {
- *         \@options inputDisabled = true;
- *
- *         constructor() {
- *             super( ...arguments );
- *             this.directives.disabled = disabled;
- *         }
+ *     function extendContext() {
+ *         this.ctx.appendDirectives( { disabled } );
  *     }
  *
- *     export default Input;
+ *     function Input( options ) {
+ *         options( {
+ *             [ $.inputDisabled ]: true
+ *         } );
+ *     }
+ *
+ *     export default Component( extendContext, Template, Input );
  * </script>
  */
 export default class disabled {
